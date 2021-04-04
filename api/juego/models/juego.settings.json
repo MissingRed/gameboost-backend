@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "juegos",
+  "info": {
+    "name": "juego"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Nombre": {
+      "type": "string"
+    },
+    "Descripcion": {
+      "type": "text"
+    },
+    "Precio": {
+      "type": "decimal"
+    },
+    "Caratula": {
+      "type": "text"
+    },
+    "Banner": {
+      "type": "text"
+    },
+    "Plataforma": {
+      "type": "string"
+    }
+  }
+}
