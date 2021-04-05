@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "juegos",
   "info": {
-    "name": "juego"
+    "name": "juego",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -11,22 +12,45 @@
   },
   "attributes": {
     "Nombre": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "Descripcion": {
-      "type": "text"
+      "type": "text",
+      "required": true
     },
     "Precio": {
-      "type": "decimal"
-    },
-    "Caratula": {
-      "type": "text"
-    },
-    "Banner": {
-      "type": "text"
+      "type": "decimal",
+      "required": true
     },
     "Plataforma": {
-      "type": "string"
+      "type": "enumeration",
+      "enum": [
+        "Windows",
+        "XboxOne",
+        "PlayStation",
+        "Android",
+        "Pc"
+      ],
+      "required": true
+    },
+    "Caratula": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "Banner": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
     }
   }
 }
