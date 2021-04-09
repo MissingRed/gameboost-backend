@@ -1,0 +1,17 @@
+{
+  "kind": "collectionType",
+  "collectionName": "favoritos",
+  "info": {
+    "name": "Favorito"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "guardados": {
+      "type": "json"
+    }
+  }
+}

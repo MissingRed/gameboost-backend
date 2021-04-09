@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/primarios",
+      "handler": "primario.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/primarios/count",
+      "handler": "primario.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/primarios/:id",
+      "handler": "primario.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/primarios",
+      "handler": "primario.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/primarios/:id",
+      "handler": "primario.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/primarios/:id",
+      "handler": "primario.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

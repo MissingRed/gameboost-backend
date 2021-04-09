@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "primarios",
+  "info": {
+    "name": "Primario",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "juegos": {
+      "collection": "juego"
+    }
+  }
+}
