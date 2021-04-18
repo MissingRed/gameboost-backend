@@ -1,0 +1,8 @@
+{
+    "provider": "cloudinary",
+    "providerOptions":{
+       "cloud_name": "gameboost",
+      "api_key": "376125443612256",
+      "api_secret": "Slw27GZEb5uPdX2ASV3V"
+    }
+}
