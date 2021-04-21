@@ -51,6 +51,39 @@
       ],
       "plugin": "upload",
       "required": true
+    },
+    "Genero": {
+      "type": "string"
+    },
+    "Fecha_lanzamiento": {
+      "type": "date"
+    },
+    "Calificacion": {
+      "type": "enumeration",
+      "enum": [
+        "Todos",
+        "Adolescentes",
+        "Maduro",
+        "Adultos",
+        "Sin_clasificar"
+      ]
+    },
+    "Editor": {
+      "type": "string"
+    },
+    "Desarrollador": {
+      "type": "string"
+    },
+    "Idiomas": {
+      "type": "enumeration",
+      "enum": [
+        "Espanol",
+        "Ingles",
+        "Frances"
+      ]
+    },
+    "Mas_info": {
+      "type": "string"
     }
   }
 }
